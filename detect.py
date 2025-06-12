@@ -7,7 +7,7 @@ import numpy as np
 model = YOLO("modelos/license_plate_detector.pt").to("cuda")
 
 # EasyOCR também usa GPU se disponível
-reader = easyocr.Reader(['en'], gpu=True)
+reader = easyocr.Reader(['pt'], gpu=True)
 
 os.makedirs("resultados", exist_ok=True)
 
